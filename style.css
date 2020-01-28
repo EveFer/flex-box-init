@@ -31,17 +31,54 @@ h2 {
     flex-wrap: wrap;
     /* flex-flow: <column/row> <nowrap/wrap/wrap-reverse>*/
     flex-flow: row wrap;
+    
+
 }
 
 .elemento-flex {
     padding: 10px;
+    /* flex-grow: es una propiedad para controlar que el tamaño sea más de los elementos hijos de un contenedor flexible*/
+    flex-grow: 1;
+}
+
+.elemento-flex:nth-child(1) {
     background-color: #E53935;
+    /* flex-order */
+    order: 3;
+    /* flex-shirnk: propiedad que controla que el tamaño sea mas chico de los elementos de un
+    contendor padre */
+    flex-grow: 0;
+    flex-shrink: 0;
+    /* flex-basis: es un propiedad que le asigna un tamaño minimo a un 
+    elemento hijo de un contenedor flexible, es decir que minimo ese valor
+    puede medir; se le pueden pasar valor de tipo px, %, rem, etc */
+    flex-basis: 50%;
 }
 
 .elemento-flex:nth-child(2) {
     background-color: #8E24AA;
+    /* flex-order */
+    order: 1;
+    flex-grow: 2;
 }
 
 .elemento-flex:nth-child(3) {
     background-color: #3F51B5;
+    /* flex-order */
+    order: 2;
+
+    /* flex: <flex-grow> <flex-shirk> <flex-basis> */
+    
 }
+/* Con media querys se visualiza mas el order de los elementos hijos de un
+contenedor padre */
+/* @media screen and (min-width:768px) {
+    .elemento-flex:nth-child(3) {
+        background-color: pink;
+        order: -1;
+    }
+    .elemento-flex:nth-child(2) {
+        background-color: brown;
+        order: 3;
+    }
+} */
