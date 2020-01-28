@@ -1,0 +1,47 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: #ff9966;
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+.contenedor {
+    background-color: white;
+    height: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h2 {
+    color: white;
+}
+
+.contenedor-flex {
+    display: flex;
+    border: 3px solid black;
+    /* flex-direction: Por defecto es row (column) */
+    flex-direction: row;
+    /* Wrap : [nowrap, wrap, wrap-reverse] wrap se utiliza con flex-direction: row*/
+    flex-wrap: wrap;
+    /* flex-flow: <column/row> <nowrap/wrap/wrap-reverse>*/
+    flex-flow: row wrap;
+}
+
+.elemento-flex {
+    padding: 10px;
+    background-color: #E53935;
+}
+
+.elemento-flex:nth-child(2) {
+    background-color: #8E24AA;
+}
+
+.elemento-flex:nth-child(3) {
+    background-color: #3F51B5;
+}
