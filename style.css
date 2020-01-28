@@ -82,3 +82,30 @@ contenedor padre */
         order: 3;
     }
 } */
+
+/* 
+    Para alinear elemento de un contenedor padre de forma HORIZONTAL
+    se utiliza la propiedad 
+    'justify-content' 
+    y puede tomar los siguientes valores
+    1. flex-start
+    2. flex-end
+    3. center
+    4. space-around
+    5. space-between
+
+
+    Para alinear elementos hijos de un contenedor flex de forma VERTICAL
+    se utiliza la propiedad
+    'align-items'
+    y pueden tomar los siguientes valores
+    1. initial
+    2. flex-start
+    2. flex-end
+    3. baseline
+    4. center
+
+    Para alinear un elemento hijo especificamente se utiliza la 
+    propiedad 'align-self', esta propiedad se debe colocar en el elemento hijo
+
+*/
